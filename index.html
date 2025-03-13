@@ -1,21 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- Main Header-->
-    <header></header>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <img src="assets/image/logo.jpg" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="https://www.linkedin.com/in/jaka-kelana-wijaya-b292621a6/">Profile</a></li>
+                    <li><a href="https://www.instagram.com/jaka2912/">Social Media</a></li>
+                    <li><a href="#">Message Us</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- Main content-->
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h1>Hi, Welcome To Our Website</h1>
+            <p>Enjoy The Content</p>
+            
+            <!-- Image Slider -->
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="assets/image/slider1.jpg" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/image/slider2.jpg" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/image/slider3.jpg" alt="Slide 3">
+                    </div>
+                </div>
+                <div class="slider-buttons">
+                    <button class="prev-btn">&#10094;</button>
+                    <button class="next-btn">&#10095;</button>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </section>
 
-    <main></main>
+       <!-- Facilitation Section -->
+<section class="facilitation">
+  <h2>Our Facilitation</h2>
+  <div class="facilities">
+      <div class="facility">
+          <div class="circle-img">
+              <img src="assets/image/teacher.jpg" alt="Professional Teacher">
+          </div>
+          <p>Professional<br>Teacher</p>
+      </div>
+      <div class="facility">
+          <div class="circle-img">
+              <img src="assets/image/stadium.jpg" alt="Sport Field">
+          </div>
+          <p>Sport Field</p>
+      </div>
+      <div class="facility">
+          <div class="circle-img">
+              <img src="assets/image/classroom.jpg" alt="Classroom">
+          </div>
+          <p>Classroom</p>
+      </div>
+  </div>
+</section>
 
-    <!-- main footer-->
-    <footer></footer>
-  </body>
+
+        <!-- Message Us Section -->
+        <section class="message-us">
+            <h2>Message Us</h2>
+            <div class="message-container">
+                <form id="messageForm">
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate">Tanggal Lahir</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="Laki-Laki">
+                            <label for="male">Laki-Laki</label>
+                            <input type="radio" id="female" name="gender" value="Perempuan">
+                            <label for="female">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+                <div class="message-preview">
+                    <h3>Current time: <span id="current-time"></span></h3>
+                    <p><strong>Nama:</strong> <span id="preview-name"></span></p>
+                    <p><strong>Tanggal Lahir:</strong> <span id="preview-birthdate"></span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="preview-gender"></span></p>
+                    <p><strong>Pesan:</strong> <span id="preview-message"></span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Created By Jaka Kelana</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
 </html>
